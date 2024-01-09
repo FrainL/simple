@@ -121,6 +121,6 @@ if(BUILD_SHELL)
         target_link_libraries(shell_app PRIVATE ${PROJECT_NAME} m)
     endif()
     install(TARGETS shell_app
-        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+        BUNDLE DESTINATION ${CMAKE_INSTALL_BINDIR}
         )
 endif()

@@ -26,7 +26,7 @@ set(SOURCE_FILES
     entry.cc
 )
 
-OPTION(BUILD_STATIC "Option to build static lib" OFF)
+OPTION(BUILD_STATIC "Option to build static lib" YES)
 if (IOS OR BUILD_STATIC)
 # iOS only support static library.
 add_library(simple STATIC ${SOURCE_FILES})
